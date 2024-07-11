@@ -1,0 +1,311 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      9625,        301]
+NotebookOptionsPosition[      9198,        281]
+NotebookOutlinePosition[      9536,        296]
+CellTagsIndexPosition[      9493,        293]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"P", "=", 
+  SqrtBox[
+   FractionBox["a", 
+    RowBox[{"a", "-", 
+     RowBox[{"(", 
+      RowBox[{"-", 
+       RowBox[{"1", "^", "d"}]}], ")"}]}]]]}]], "Input",
+ CellChangeTimes->{{3.64345961385842*^9, 3.6434596489812326`*^9}}],
+
+Cell[BoxData[
+ SqrtBox[
+  FractionBox["a", 
+   RowBox[{"1", "+", "a"}]]]], "Output",
+ CellChangeTimes->{3.643459720638754*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "a", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.643459652030946*^9, 3.643459694219822*^9}}],
+
+Cell[BoxData[
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       FractionBox["a", 
+        RowBox[{"1", "-", "a"}]], "\[NotElement]", "Reals"}], "||", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        FractionBox["a", 
+         RowBox[{"1", "-", "a"}]], "]"}], "\[GreaterEqual]", "0"}], "||", 
+      RowBox[{
+       RowBox[{"1", "+", 
+        RowBox[{"Re", "[", 
+         FractionBox["a", 
+          RowBox[{"1", "-", "a"}]], "]"}]}], "\[LessEqual]", "0"}]}], ")"}], "&&", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       FractionBox[
+        RowBox[{"1", "+", "a"}], 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "a"}]], "\[NotElement]", "Reals"}], "||", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        FractionBox[
+         RowBox[{"1", "+", "a"}], 
+         RowBox[{"1", "-", "a"}]], "]"}], "\[GreaterEqual]", "0"}], "||", 
+      RowBox[{
+       RowBox[{"Re", "[", 
+        FractionBox[
+         RowBox[{"1", "+", "a"}], 
+         RowBox[{
+          RowBox[{"-", "1"}], "+", "a"}]], "]"}], "\[Equal]", "0"}], "||", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Re", "[", 
+          FractionBox[
+           RowBox[{"1", "+", "a"}], 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "a"}]], "]"}], "\[GreaterEqual]", "1"}], 
+        "&&", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           FractionBox[
+            RowBox[{"1", "+", "a"}], 
+            RowBox[{"1", "-", "a"}]], "\[NotElement]", "Reals"}], "||", 
+          RowBox[{
+           RowBox[{"1", "+", 
+            RowBox[{"Re", "[", 
+             FractionBox[
+              RowBox[{"1", "+", "a"}], 
+              RowBox[{"1", "-", "a"}]], "]"}]}], "\[LessEqual]", "0"}]}], 
+         ")"}]}], ")"}]}], ")"}], "&&", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"Im", "[", "a", "]"}], "+", 
+          RowBox[{"Re", "[", "a", "]"}]}], "\[LessEqual]", "1"}], "&&", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"1", "+", 
+              RowBox[{"Im", "[", "a", "]"}]}], "\[GreaterEqual]", 
+             RowBox[{"Re", "[", "a", "]"}]}], "&&", 
+            RowBox[{"0", "<", 
+             RowBox[{"Re", "[", "a", "]"}], "<", "1"}]}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Im", "[", "a", "]"}], ">", "0"}], "&&", 
+            RowBox[{
+             RowBox[{"Re", "[", "a", "]"}], "\[LessEqual]", "0"}]}], ")"}]}], 
+         ")"}]}], ")"}], "||", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Im", "[", "a", "]"}], "<", "0"}], "&&", 
+        RowBox[{
+         RowBox[{"1", "+", 
+          RowBox[{"Im", "[", "a", "]"}]}], "\[GreaterEqual]", 
+         RowBox[{"Re", "[", "a", "]"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", "a", "]"}], "\[LessEqual]", "0"}]}], ")"}], "||", 
+      
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"1", "+", 
+          RowBox[{"Im", "[", "a", "]"}]}], "\[LessEqual]", 
+         RowBox[{"Re", "[", "a", "]"}]}], "&&", 
+        RowBox[{
+         RowBox[{"Re", "[", "a", "]"}], ">", "1"}], "&&", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Im", "[", "a", "]"}], "+", 
+          RowBox[{"Re", "[", "a", "]"}]}], "\[GreaterEqual]", "1"}]}], 
+       ")"}]}], ")"}]}], ",", 
+   RowBox[{
+    SqrtBox["2"], "-", 
+    RowBox[{
+     SqrtBox["a"], " ", 
+     SqrtBox[
+      RowBox[{"1", "+", "a"}]]}], "-", 
+    RowBox[{"ArcSinh", "[", "1", "]"}], "+", 
+    RowBox[{"ArcSinh", "[", 
+     SqrtBox["a"], "]"}]}], ",", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     SqrtBox[
+      FractionBox["a", 
+       RowBox[{"1", "+", "a"}]]], ",", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", "a", ",", "1"}], "}"}], ",", 
+     RowBox[{"Assumptions", "\[Rule]", 
+      RowBox[{"!", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["a", 
+             RowBox[{"1", "-", "a"}]], "\[NotElement]", "Reals"}], "||", 
+           RowBox[{
+            RowBox[{"Re", "[", 
+             FractionBox["a", 
+              RowBox[{"1", "-", "a"}]], "]"}], "\[GreaterEqual]", "0"}], "||", 
+           RowBox[{
+            RowBox[{"1", "+", 
+             RowBox[{"Re", "[", 
+              FractionBox["a", 
+               RowBox[{"1", "-", "a"}]], "]"}]}], "\[LessEqual]", "0"}]}], 
+          ")"}], "&&", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox[
+             RowBox[{"1", "+", "a"}], 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "a"}]], "\[NotElement]", "Reals"}], "||", 
+           RowBox[{
+            RowBox[{"Re", "[", 
+             FractionBox[
+              RowBox[{"1", "+", "a"}], 
+              RowBox[{"1", "-", "a"}]], "]"}], "\[GreaterEqual]", "0"}], "||", 
+           RowBox[{
+            RowBox[{"Re", "[", 
+             FractionBox[
+              RowBox[{"1", "+", "a"}], 
+              RowBox[{
+               RowBox[{"-", "1"}], "+", "a"}]], "]"}], "\[Equal]", "0"}], "||", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Re", "[", 
+               FractionBox[
+                RowBox[{"1", "+", "a"}], 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "a"}]], "]"}], "\[GreaterEqual]", 
+              "1"}], "&&", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                FractionBox[
+                 RowBox[{"1", "+", "a"}], 
+                 RowBox[{"1", "-", "a"}]], "\[NotElement]", "Reals"}], "||", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 RowBox[{"Re", "[", 
+                  FractionBox[
+                   RowBox[{"1", "+", "a"}], 
+                   RowBox[{"1", "-", "a"}]], "]"}]}], "\[LessEqual]", "0"}]}],
+               ")"}]}], ")"}]}], ")"}], "&&", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"Im", "[", "a", "]"}], "+", 
+               RowBox[{"Re", "[", "a", "]"}]}], "\[LessEqual]", "1"}], "&&", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"1", "+", 
+                   RowBox[{"Im", "[", "a", "]"}]}], "\[GreaterEqual]", 
+                  RowBox[{"Re", "[", "a", "]"}]}], "&&", 
+                 RowBox[{"0", "<", 
+                  RowBox[{"Re", "[", "a", "]"}], "<", "1"}]}], ")"}], "||", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Im", "[", "a", "]"}], ">", "0"}], "&&", 
+                 RowBox[{
+                  RowBox[{"Re", "[", "a", "]"}], "\[LessEqual]", "0"}]}], 
+                ")"}]}], ")"}]}], ")"}], "||", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Im", "[", "a", "]"}], "<", "0"}], "&&", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               RowBox[{"Im", "[", "a", "]"}]}], "\[GreaterEqual]", 
+              RowBox[{"Re", "[", "a", "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"Re", "[", "a", "]"}], "\[LessEqual]", "0"}]}], ")"}], "||", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"1", "+", 
+               RowBox[{"Im", "[", "a", "]"}]}], "\[LessEqual]", 
+              RowBox[{"Re", "[", "a", "]"}]}], "&&", 
+             RowBox[{
+              RowBox[{"Re", "[", "a", "]"}], ">", "1"}], "&&", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Im", "[", "a", "]"}], "+", 
+               RowBox[{"Re", "[", "a", "]"}]}], "\[GreaterEqual]", "1"}]}], 
+            ")"}]}], ")"}]}], ")"}]}]}]}], "]"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.643459830018173*^9}]
+}, Open  ]]
+},
+WindowSize->{640, 623},
+WindowMargins->{{147, Automatic}, {Automatic, 28}},
+FrontEndVersion->"7.0 for Linux x86 (64-bit) (November 11, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 251, 8, 70, "Input"],
+Cell[821, 32, 126, 4, 58, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[984, 41, 210, 5, 32, "Input"],
+Cell[1197, 48, 7985, 230, 479, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
